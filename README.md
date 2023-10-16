@@ -9,10 +9,8 @@ Este é um script Python que permite extrair informações de arquivos XML que c
 Certifique-se de que você tenha Python 3.x instalado em seu sistema. Além disso, você precisará das seguintes bibliotecas Python instaladas:
 
 - `xml.etree.ElementTree`
-- `logging`
 - `pathlib`
 - `pandas`
-- `sqlite3`
 - `tqdm`
 
 Você pode instalar as bibliotecas necessárias executando o seguinte comando:
@@ -49,19 +47,8 @@ O script processará os arquivos XML na pasta `batchXML/` e armazenará as infor
 
 - `lattes_xml.py`: O módulo que contém a classe `Extrator` para extrair informações dos arquivos XML.
 
-## Banco de Dados SQLite
-
-O script cria um banco de dados SQLite com o nome correspondente ao tipo de produção. Por padrão, o banco de dados é nomeado como `producao_bibliografica.db`. Os dados extraídos são armazenados na tabela `producao_bibliografica`.
-
-## Autor
-
-- Nome: [Seu Nome]
-- Contato: [Seu Email]
 
 ## Licença
 
 Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter detalhes.
 
----
-
-Certifique-se de personalizar as informações do autor e a seção de licença de acordo com as suas necessidades. Isso fornece uma breve visão geral do seu projeto no GitHub e facilita o entendimento e uso do seu código por outras pessoas.
