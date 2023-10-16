@@ -16,7 +16,7 @@ Certifique-se de que você tenha Python 3.x instalado em seu sistema. Além diss
 Você pode instalar as bibliotecas necessárias executando o seguinte comando:
 
 ```
-pip install pandas tqdm
+pip install -r requirements.txt
 ```
 
 ### Configuração
