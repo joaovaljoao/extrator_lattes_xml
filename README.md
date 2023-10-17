@@ -1,6 +1,6 @@
 # Extrator de Informações de Arquivos XML para CSV
 
-Este é um script Python que permite extrair informações de arquivos XML que contêm dados de produção bibliográfica, produção técnica ou outra produção de um pesquisador. As informações extraídas são armazenadas em umCSV para posterior análise e consulta.
+Este é um script Python que permite extrair informações de arquivos XML que contêm dados de produção bibliográfica, produção técnica ou outra produção de um pesquisador. As informações extraídas são armazenadas em um CSV para posterior análise e consulta.
 
 ## Como Usar
 
