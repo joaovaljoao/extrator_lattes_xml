@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 from lattes_xml import Extrator, listar_xmls
-import csv
+import sqlite3
 from tqdm import tqdm
 
 def process_xml(xml):
@@ -12,7 +12,7 @@ def process_xml(xml):
 if __name__ == '__main__':
     pasta_xmls = 'batchXML/'
     tipo_producao = 'PRODUCAO-BIBLIOGRAFICA'
-    csv_filename = f"{tipo_producao.lower().replace('-', '_')}.csv"
+    db_filename = f"{tipo_producao.lower().replace('-', '_')}.db"  # Nome do arquivo do banco de dados SQLite
 
     xmls = listar_xmls(pasta_xmls)
 
@@ -22,4 +22,11 @@ if __name__ == '__main__':
 
     df = pd.concat(df_list, ignore_index=True)
 
-    df.to_csv(csv_filename, index=False, sep='\t', encoding='iso-8859-1', escapechar='\\', quoting=csv.QUOTE_NONE)
+    # Conecte-se ao banco de dados SQLite
+    conn = sqlite3.connect(db_filename)
+
+    # Salve o DataFrame no banco de dados
+    df.to_sql(name=db_filename, con=conn, if_exists='replace', index=False)
+
+    # Feche a conexão com o banco de dados
+    conn.close()
