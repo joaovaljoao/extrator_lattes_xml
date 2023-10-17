@@ -1,6 +1,6 @@
-# Extrator de Informações de Arquivos XML para Banco de Dados SQLite
+# Extrator de Informações de Arquivos XML para CSV
 
-Este é um script Python que permite extrair informações de arquivos XML que contêm dados de produção bibliográfica, produção técnica ou outra produção de um pesquisador. As informações extraídas são armazenadas em um banco de dados SQLite para posterior análise e consulta.
+Este é um script Python que permite extrair informações de arquivos XML que contêm dados de produção bibliográfica, produção técnica ou outra produção de um pesquisador. As informações extraídas são armazenadas em umCSV para posterior análise e consulta.
 
 ## Como Usar
 
